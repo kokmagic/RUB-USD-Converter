@@ -16,6 +16,16 @@ public class ConvertController {
     public ResponseEntity<?> convert(@RequestParam String currencyFrom,
                        @RequestParam String currencyTo,
                        @RequestParam double value ) {
+
+        if (!List.of("RUB","USD").contains(currencyFrom)) {
+            return new ResponseEntity<>("Вы ввели некорректные названия валют.", HttpStatus.UNPROCESSABLE_ENTITY);
+        }
+        if (!List.of("RUB","USD").contains(currencyTo)) {
+            return new ResponseEntity<>("Вы ввели некорректные названия валют.", HttpStatus.UNPROCESSABLE_ENTITY);
+        }
+        if (currencyTo.equals(currencyFrom)){
+            return new ResponseEntity<>("Из одной валюты в ту же переводить не стоит.", HttpStatus.UNPROCESSABLE_ENTITY);
+        }
         return new ResponseEntity<>(Objects.equals(currencyFrom, "USD") ? value * 62 : value * 0.016, HttpStatus.OK);
 
     }
