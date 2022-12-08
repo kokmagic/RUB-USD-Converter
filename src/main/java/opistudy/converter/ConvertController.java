@@ -16,7 +16,7 @@ public class ConvertController {
     public ResponseEntity<?> convert(@RequestParam String currencyFrom,
                        @RequestParam String currencyTo,
                        @RequestParam double value ) {
-        return new ResponseEntity<>(value * 0.016, HttpStatus.OK);
+        return new ResponseEntity<>(Objects.equals(currencyFrom, "USD") ? value * 62 : value * 0.016, HttpStatus.OK);
 
     }
 }
