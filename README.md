@@ -28,10 +28,10 @@ $ sudo docker run -p 8080:8080 app
 где `currencyFrom` и `currencyTo` - это валюты с которой и в которую произойдет конвертация соответственно.
 `value` - это количество той или иной валюты. Ответом будет результат конвертации.
 # Примеры работы
-Пример конвертации из рублей в доллары:
+Пример конвертации из рублей в доллары (RUB TO USD):
 
 ![output example #1](https://github.com/kokmagic/RUB-USD-Converter/blob/07428037f89349a7081880cba4b8635f30a29191/Examples/example1.png)
 
-Пример конвертации из долларов в рубли:
+Пример конвертации из долларов в рубли (USD TO RUB):
 
 ![output example #1](https://github.com/kokmagic/RUB-USD-Converter/blob/07428037f89349a7081880cba4b8635f30a29191/Examples/example2.png)
