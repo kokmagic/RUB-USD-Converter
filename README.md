@@ -1,4 +1,7 @@
 # RUB-USD-Converter
+```main:``` ![badge](https://github.com/kokmagic/RUB-USD-Converter/actions/workflows/gradle-test.yml/badge.svg?branch=main)
+```develop:``` ![badge](https://github.com/kokmagic/RUB-USD-Converter/actions/workflows/gradle-test.yml/badge.svg?branch=develop)
+
 Сервис, который по запросу конвертирует заданное количество рублей в доллары и наоборот.
 # Запуск программы
 Клонируйте репозиторий:
